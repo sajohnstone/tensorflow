@@ -1,11 +1,23 @@
 {
-  "name": "tensorflow",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "tensorflow",
+    "version": "1.0.0",
+    "description": "",
+    "main": "script.js",
+    "scripts": {
+        "test": "mocha",
+        "start": "node script.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "mocha": "^5.2.0",
+        "nodemon": "^1.18.9"
+    },
+    "dependencies": {
+        "@tensorflow-models/mobilenet": "^0.2.2",
+        "@tensorflow/tfjs": "^0.14.2",
+        "@tensorflow/tfjs-node-gpu": "^0.2.3",
+        "jpeg-js": "^0.3.4"
+    }
 }
